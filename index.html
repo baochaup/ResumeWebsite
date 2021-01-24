@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Chau's Website
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-menu">
+    <div class="container">
+        <nav id="navbar-menu" class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Bao Chau Pham</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#jumbo">About me</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#connect">Connect</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="jumbo" class="row">
+            <div class="text-center">
+                <img id="avatar" src="resources/img/ava.jpg" class="rounded-circle mb-3" alt="profile picture">
+                <h1>Hello, my name is Chau.</h1>
+                <p>I am currently a student at the University of Utah,
+                    living in Salt Lake City, Utah.
+                    My experties is in web and software development.</p>
+            </div>
+        </div>
+        <div id="projects" class="row">
+            <div class="text-center mb-3">
+                <h3 class="mb-3">My Projects</h3>
+                <p>Please check out some of my projects I have worked on.</p>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img class="proj-img" src="resources/img/pj1.png" alt="Tank Wars">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Tank Wars</h5>
+                                <p class="card-text">A client-server game in C# using multi-threading following the MVC
+                                    practice
+                                    which allows the server to accept multiple players(clients) simultaneously
+                                    in the network based on the TCP/IP protocol, and prevents any race conditions.
+                                    This project uses socket to make the connection and JSON to serialize
+                                    and deserialize the info between client and server.
+                                    It also saves game records to database, and public data to a webserver.</p>
+                                <a href="https://github.com/baochaup/TankWars/tree/main" target="_blank"
+                                    class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img class="proj-img" src="resources/img/pj5.png" alt="Spreadsheet">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Global Migration Flows</h5>
+                                <p class="card-text">The main objective of this project is to easily visualize the
+                                    immigration patterns of countries around the world on a website.
+                                    Users would be able to learn about fairly recent immigration data on several
+                                    countries worldwide while maybe also learning a little bit about their recent
+                                    history.
+                                    The project is developed using HTML, CSS, Javascript with D3.
+                                </p>
+                                <a href="https://baochaup.github.io/dataviscourse-pr-worldmigration/" target="_blank"
+                                    class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img class="proj-img" src="resources/img/pj2.png" alt="Shopping Cart">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Shopping Cart</h5>
+                                <p class="card-text">This is the final project in the Web Development CS 2440 class at
+                                    SLCC.
+                                    It includes a webpage introducing myself and an e-Commerce website.
+                                    This website is built using Bootstrap and PHP. In the e-Commerce website,
+                                    the shopping cart feature uses MySQL as the storage for products and users.</p>
+                                <a href="http://ec2-18-219-34-73.us-east-2.compute.amazonaws.com/eCommerce/shopping.php"
+                                    target="_blank" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img class="proj-img" src="resources/img/pj3.png" alt="Home Sales Prices">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Home Sales Prices Analysis in Salt Lake County</h5>
+                                <p class="card-text">In this project, I use Python Notebook to examine home sales prices
+                                    in Salt Lake County, Utah. I also analyze the home sales data to
+                                    answer the question of whether the number of venues around a
+                                    home impacts its price. This data analysis will be beneficial to people
+                                    who are currently looking to buy an affordable home in Salt Lake County.</p>
+                                <a href="https://github.com/baochaup/Coursera_DataScience_Capstone" target="_blank"
+                                    class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img class="proj-img" src="resources/img/pj4.png" alt="Spreadsheet">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Spreadsheet</h5>
+                                <p class="card-text">In this C# project, I build a spreadsheet program like MS Excel
+                                    with some basic features such as save/load file, cells reference, basic math
+                                    operations.</p>
+                                <a href="https://github.com/baochaup/Spreadsheet/tree/main" target="_blank"
+                                    class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img class="proj-img" src="resources/img/pj6.png" alt="Spreadsheet">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Small Projects</h5>
+                                <p class="card-text">A mix of small HTML/CSS/Javascript projects including Tic Tac Toe,
+                                    Mad Libs Game
+                                    , Mystery Numbers, Secret Number, etc.</p>
+                                <a href="https://baochaup.github.io/SLCC-html-projects/" target="_blank"
+                                    class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="connect" class="contact-me row">
+            <div class="text-center mb-3">
+                <h4>Thanks for visting my website. Have any question?
+                    Send me an email at baochap@gmail.com</h3>
+                <h4>Find me on</h4>
+                <a href="https://www.linkedin.com/in/bao-chau-pham/" target="_blank"><i class="bi bi-linkedin me-3"></i></a>      
+                <a href="https://github.com/baochaup" target="_blank"><i class="bi bi-github me-3"></i></a>
+                <a href="https://www.facebook.com/chaupham7985/" target="_blank"><i class="bi bi-facebook me-3"></i></a>
+                <a href="https://www.instagram.com/chaupham7185/" target="_blank"><i class="bi bi-instagram me-3"></i></a>
+                <a href="https://twitter.com/baochaup" target="_blank"><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+        <div class="row footer">
+            <div class="text-center">
+                <h6>Developed by Bao Chau Pham</h5>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

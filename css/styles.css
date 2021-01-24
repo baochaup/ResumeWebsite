@@ -1,0 +1,73 @@
+body {
+    position: relative;
+}
+
+.container {
+    margin-top: 3rem;
+}
+
+.proj-img {
+    max-width: 100%;
+}
+
+.card {
+    min-height: 18rem;
+    padding: 0.5rem;
+    box-shadow: 0 1rem 1.5rem rgb(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-0.5rem) scale(1.02);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.contact-me {
+    margin-top: 10rem;
+}
+
+.contact-me-form {
+    width: 70%;
+    margin: auto;
+}
+
+.bi {
+    font-size: xx-large;
+}
+
+.bi-linkedin {
+    color: #0E76A8;
+}
+
+.bi-github {
+    color: black;
+}
+
+.bi-facebook {
+    color: #4267B2;
+}
+
+.bi-instagram {
+    color: #fb3958;
+}
+
+.bi-twitter {
+    color: #00acee;
+}
+
+.footer {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+#jumbo {
+    margin-bottom: 10rem;
+}
+
+#avatar {
+    width: 20rem;
+    height: 20rem;
+    margin-top: 8rem;
+    border: 5px solid #555;
+}
